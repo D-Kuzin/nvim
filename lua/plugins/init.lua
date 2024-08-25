@@ -1,11 +1,9 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
-
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -33,7 +31,7 @@ return {
     },
     config = function()
       require("nvim-ts-autotag").setup()
-    end
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
